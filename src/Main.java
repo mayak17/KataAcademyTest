@@ -86,8 +86,8 @@ public class Main {
 
         sign = input.charAt(indexSign);
 
-        firstNumber = input.substring(0, indexSign);
-        secondNumber = input.substring(indexSign + 1);
+        firstNumber = input.substring(0, indexSign).trim();
+        secondNumber = input.substring(indexSign + 1).trim();
 
         if(getIndexSign(secondNumber)>=0)
             throw new ArithmeticException("формат математической операции не удовлетворяет заданию " +
